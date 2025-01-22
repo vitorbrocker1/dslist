@@ -1,0 +1,8 @@
+package com.vitorbrocker.dslist.repositories;
+
+import com.vitorbrocker.dslist.entities.Game;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface GameRepository extends JpaRepository<Game, Long> {
+
+}
