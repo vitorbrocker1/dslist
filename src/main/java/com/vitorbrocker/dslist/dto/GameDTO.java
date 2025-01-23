@@ -1,8 +1,6 @@
 package com.vitorbrocker.dslist.dto;
 
-import com.fasterxml.jackson.databind.util.BeanUtil;
 import com.vitorbrocker.dslist.entities.Game;
-import jakarta.persistence.Column;
 import org.springframework.beans.BeanUtils;
 
 public class GameDTO {

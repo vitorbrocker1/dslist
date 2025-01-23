@@ -2,8 +2,6 @@ package com.vitorbrocker.dslist.crontollers;
 
 import com.vitorbrocker.dslist.dto.GameDTO;
 import com.vitorbrocker.dslist.dto.GameMinDTO;
-import com.vitorbrocker.dslist.entities.Game;
-import com.vitorbrocker.dslist.repositories.GameRepository;
 import com.vitorbrocker.dslist.services.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
