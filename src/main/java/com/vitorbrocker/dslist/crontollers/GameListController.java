@@ -2,13 +2,12 @@ package com.vitorbrocker.dslist.crontollers;
 
 import com.vitorbrocker.dslist.dto.GameListDTO;
 import com.vitorbrocker.dslist.dto.GameMinDTO;
+import com.vitorbrocker.dslist.dto.ReplacementDTO;
 import com.vitorbrocker.dslist.services.GameListService;
 import com.vitorbrocker.dslist.services.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
 
 @RestController
@@ -31,4 +30,9 @@ public class GameListController {
         List<GameMinDTO> result = gameService.findByList(listId);
         return result;
     }
+    @PostMapping(value = "/{listId}/replacement")
+    public void move(@PathVariable Long listId, @RequestBody ReplacementDTO body){
+        gameListService.move(listId, body.getSourceIndex(), body.getDestinationIndex());
+    }
+
 }
