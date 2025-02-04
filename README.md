@@ -37,6 +37,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 ## ⚙️ Estrutura do Projeto
 
+  
   📌 APIs RESTful
 
 O sistema fornece endpoints para:
@@ -45,6 +46,7 @@ O sistema fornece endpoints para:
 
   Organizar jogos em listas personalizadas, permitindo definir posições específicas dentro de cada lista.
 
+  
   📌 Arquitetura MVC
 
 O projeto segue a arquitetura Model-View-Controller (MVC), organizada em camadas:
